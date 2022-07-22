@@ -7,9 +7,7 @@ function notFoundHandler(req,res,next){
 
 // default error handler
 function errorHandler(err,req,res,next){
-res.render('error',{
-  title:"Error Page"
-});
+res.locals.error = 
 }
 
 module.exports= {
